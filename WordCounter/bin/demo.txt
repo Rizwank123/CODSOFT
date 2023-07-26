@@ -1,0 +1,23 @@
+Roles and Responsibilities
+
+a. Designing and developing user interfaces using AngularJS best practices.
+
+b. Adapting interface for modern internet applications using the latest front-end technologies.
+
+c. Writing JavaScript, CSS, and HTML.
+
+d. Developing product analysis tasks.
+
+e. Making complex technical and design decisions for AngularJS projects.
+
+f. Developing application codes and unit tests in AngularJS, Java Technologies, and Rest Web Services.
+
+g. Conducting performance tests.
+
+h. Consulting with the design team.
+
+i. Ensuring high performance of applications and providing support.
+
+Job Type: Full-time
+
+Salary: From ₹30,000.00 per month
