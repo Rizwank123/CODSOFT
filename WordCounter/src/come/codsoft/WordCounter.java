@@ -1,5 +1,7 @@
 package come.codsoft;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class WordCounter {
@@ -15,6 +17,7 @@ public class WordCounter {
                 "*   2. File Input             " +
                 "*   0. Exit                   " +
                 "*****************************";
+		Map<String,Integer>wordFrequency=new HashMap<>();
 		while(true) {
 			System.out.println(s);
 			System.out.println("Enter you choice: ");
@@ -25,10 +28,15 @@ public class WordCounter {
 			String[] arr=	strToArray.convertToArray(str);
 			int c=0;
 			for(int i=0;i<arr.length;i++) {
+				String w=arr[i].toLowerCase();
+				wordFrequency.put(w,wordFrequency.getOrDefault(w, 0)+1);
 				if(strToArray.stopWords.contains(arr[i])) continue;
 				else c++;
 			}
-			System.out.println(c);
+			for(String key:wordFrequency.keySet()) {
+				System.out.println("word: "+key+"    "+" frquency: "+wordFrequency.get(key));
+			}
+			System.out.println("total words count is : "+c);
 				
 				
 			}
@@ -38,9 +46,15 @@ public class WordCounter {
 				String[] arr=	strToArray.convertToArray(str);
 				int c=0;
 				for(int i=0;i<arr.length;i++) {
-					c++;
+					String w=arr[i].toLowerCase();
+					wordFrequency.put(w,wordFrequency.getOrDefault(w, 0)+1);
+					if(strToArray.stopWords.contains(arr[i])) continue;
+					else c++;
 				}
-				System.out.println(c);
+				for(String key:wordFrequency.keySet()) {
+					System.out.println("word: "+key+"    "+" frquency: "+wordFrequency.get(key));
+				}
+				System.out.println("total words count is : "+c);
 				
 				
 			}
